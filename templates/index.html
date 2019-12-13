@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="background-color: lightblue; opacity: 0.8;">
+<head>
+  <meta charset="UTF-8">
+  <title>Blind Detection</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login" style="background-color: orange; padding-top: 100px; padding-bottom: 100px;">
+	<center><h1>Blind Detection</h1></center>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="file" name="pic" accept="image/*" required="required" style="margin-left: 45%; color: black;"><br/>
+		
+		<h3 style="margin-left: 45%">Upolad Image</h3><br/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large" 
+		style="background-color: white; text-decoration: none; margin-left: 45%; border-radius: 20px; font-size: 25px;">
+		Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <!--{{ prediction_text }}-->
+
+ </div>
+
+
+</body>
+</html>
